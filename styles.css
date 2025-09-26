@@ -1,0 +1,188 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== General ===== */
+body {
+    background: #a81443;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ===== Header ===== */
+header {
+    background: #f1cc6fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.filters label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.filters button {
+    background: #f1c540ff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.filters button:hover {
+    background: #f1b930;
+}
+
+/* ===== Métricas ===== */
+#metricsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.metric-card {
+    background: #a81443;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+}
+
+.metric-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* ===== Snapshots ===== */
+#snapshotName {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#guardarSnapshot {
+    background: #f4e5bdff;
+    border: none;
+    padding: 8px 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#guardarSnapshot:hover {
+    background: #e6d49e;
+}
+
+h2 {
+    margin: 20px 0 10px;
+}
+
+#snapshotsList {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#snapshotsList li {
+    background: #fff;
+    margin: 6px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+}
+
+#snapshotsList a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#snapshotsList a:hover {
+    color: #f1b930;
+}
+
+/* ===== Detalle Snapshot ===== */
+#snapshotDetalle {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+/* Contenedor principal para las métricas y el pie chart */
+.charts-wrapper {
+    display: flex; /* La clave para alinear horizontalmente */
+    gap: 40px; /* Espacio entre los contenedores de gráficos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+}
+
+/* Contenedor de métricas circulares */
+.metricas-circulares {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* si hay muchas métricas se acomodan en varias filas */
+    flex: 1; /* Permite que este contenedor crezca y ocupe espacio */
+    min-width: 400px; /* Asegura que tenga un ancho mínimo para que las métricas se vean bien */
+}
+
+/* Contenedor del pie chart */
+.piechart-container {
+
+    flex: none; /* Evita que este contenedor crezca */
+    max-width: 350px;
+    min-width: 250px; /* Ancho mínimo para que el pie chart sea legible */
+}
+/* Estilos para el botón de cerrar sesión */
+.logout-btn {
+    background: #F44336;
+    color: #fff !important; /* Usamos !important para asegurar que el color blanco se aplique */
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none !important; /* Usamos !important para eliminar el subrayado */
+    font-weight: bold;
+    margin-left: 10px;
+    transition: background 0.3s ease; /* Mejoramos la transición */
+    display: inline-block; /* Asegura que el padding funcione correctamente */
+}
+
+/* Efecto hover del botón */
+.logout-btn:hover {
+    background: #d32f2f;
+}
