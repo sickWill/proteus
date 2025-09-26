@@ -52,7 +52,7 @@ El proyecto incluye un sistema de login, control de sesiones y dashboards con gr
 │── styles.css # Estilos generales
 │── tabla.sql # SQL para crear tablas y registros iniciales
 
----
+----
 Prioridades y workflow : 
 1 ) lograr que se mostraran las metricas en pantalla llamandolas desde la base de datos
 2 ) crear el dashboard correspondiente y su style.css 
