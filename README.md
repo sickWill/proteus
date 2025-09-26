@@ -53,6 +53,14 @@ El proyecto incluye un sistema de login, control de sesiones y dashboards con gr
 │── tabla.sql # SQL para crear tablas y registros iniciales
 
 ---
+Prioridades y workflow : 
+1 ) lograr que se mostraran las metricas en pantalla llamandolas desde la base de datos
+2 ) crear el dashboard correspondiente y su style.css 
+3 ) crear la funcionalidad de snapshots y que se guardaran en la base de datos
+4 ) Crear un login que luego permitiera dentro de el dashboard, que segun el tipo de user, se vizualisaran distintos filtros
+5 ) crear el piechart para las metricas secundarias y ajustar el css para que fuera legible y seleccionable 
+6 ) crear el boton de cierre de sesion para completar la UI de el agente y que nos re-diriga al login.
+---
 
 ## Créditos
 - Autor: Guillermo Neves  
