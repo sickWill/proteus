@@ -23,7 +23,7 @@ El proyecto incluye un sistema de login, control de sesiones y dashboards con gr
    - Host: `sql208.infinityfree.com`
    - Database Name: `if0_40028271_proteus`
    - Username: `if0_40028271`
-   - Password: la que configuraste al crear la BD
+   - Password: `Dom2bk9eqheaqZi`
 3. Importar el archivo `tabla.sql` desde phpMyAdmin del hosting para crear las tablas y registros iniciales.  
 4. Configurar las credenciales en `login.php` (host, DB, user, password) según el panel de InfinityFree.  
 
@@ -43,14 +43,14 @@ El proyecto incluye un sistema de login, control de sesiones y dashboards con gr
 
 ## Estructura de archivos
 /htdocs
-│── index.php # Landing page → redirige al login
-│── login.php # Página de login
-│── logout.php # Cierra sesión
-│── dashboard.php # Dashboard principal
-│── metrics.php # API interna para obtener métricas (JSON)
-│── script.js # Lógica de gráficos y snapshots
-│── styles.css # Estilos generales
-│── tabla.sql # SQL para crear tablas y registros iniciales
+index.php # Landing page → redirige al login
+login.php # Página de login
+logout.php # Cierra sesión
+dashboard.php # Dashboard principal
+metrics.php # API interna para obtener métricas (JSON)
+script.js # Lógica de gráficos y snapshots
+styles.css # Estilos generales
+tabla.sql # SQL para crear tablas y registros iniciales
 
 ----
 Prioridades y workflow : 
