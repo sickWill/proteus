@@ -17,15 +17,6 @@ El proyecto incluye un sistema de login, control de sesiones y dashboards con gr
 
 ---
 
-## Instalación / Despliegue
-1. Subir todos los archivos del proyecto al hosting (ej. InfinityFree) en la carpeta `htdocs` o raíz del dominio.  
-2. Crear la base de datos en el panel de InfinityFree:
-   - Host: `sql208.infinityfree.com`
-   - Database Name: `if0_40028271_proteus`
-   - Username: `if0_40028271`
-   - Password: `Dom2bk9eqheaqZi`
-3. Importar el archivo `tabla.sql` desde phpMyAdmin del hosting para crear las tablas y registros iniciales.  
-4. Configurar las credenciales en `login.php` (host, DB, user, password) según el panel de InfinityFree.  
 
 ---
 
